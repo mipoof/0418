@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <!--css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <style>
         .myli {
             color: blueviolet;
@@ -11,6 +12,10 @@
 
         .myli2 {
             color: green;
+        }
+
+        .btn{
+            btn-success;
         }
     </style>
 </head>
@@ -23,37 +28,88 @@
     <li>B</li>
     <li>C</li>
 </ul>
+
 <ul id="t2">
     <li class="myli">A</li>
     <li class="myli">B</li>
     <li class="myli">C</li>
 </ul>
 
+<ul id="t3">
+    <button id="btn1-1">1-1</button>
+</ul>
 
-<!--js-->
+<!--js放在body的最後一行-->
 <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
         crossorigin="anonymous"></script>
 
+<!--開始寫javascript的code-->
 <script type="text/javascript">
 
     $(function () {
+<!--早上的網頁課-->
+        // console.log("hi~~~ ");
+        // //MyBtnClick();
+        // $("#btnC").bind("click", MyBtnClick
+        // ");
+
+<!--下午的網頁課-->
         console.log("hi~~~ ");
-        //MyBtnClick();
-        $("#btnC").bind("click" ,MyBtnClick");
-    });
+<!--表格按鈕-->
+        $("#t3").empty();
+        for(var i=0;i<7;i++){
+            for(var j=0;j<4;j++){
+                $("#t3").append("<button class='btn btn-success m-4'>"+(i+1)+"-"+(j+1)+"</button>")
+            }
+            $("#t3").append("<br/>")
+        }
+        // btnOnClick();
+
+<!--新增class-->
         // #t1 > li:nth-child(1)
         // #t1 > li
-        //$("#t1 > li").addClass("myli");
+        // $("#t1 > li").addClass("myli");
 
+<!--新增移除class-->
         // #t2 > li:nth-child(1)
         // #t2 > li
-        //$("#t2 > li").removeClass("myli").addClass("myli2");
+        // $("#t2 > li").removeClass("myli").addClass("myli2");
+        //
+
+<!--for迴圈-->
+        // $("#t1").empty();
+        // for (var i = 0; i < 10; i++) {
+        //     var cls = 'myli' ;
+        //     if (i % 2 == 0) {
+        //         cls = 'myli2';
+        //     }
+        //     $("#t1").append("<li class="+cls+">" + i + "</li>");
+        // }
+
+<!--新增按鈕-->
+        // $("#btn1-1").bind("click",btnOnClick);
+        // $("#btn1-1").hover(btnOnHoverIn,btnOnHoverOut);
 
 
+    });
 
-    function MyBtnClick(){
-        console.log("my btn click !!!");
-    }
+<!--早上的網頁課-->
+    // function MyBtnClick() {
+    //     console.log("my btn click !!!");
+    // }
+
+<!--下午的網頁課-->
+<!--新增按鈕-->
+    // function btnOnClick(){
+    // console.log("按屁!");
+    // }
+    // function btnOnHoverIn(){
+    //     console.log("滑動往上! IN ");
+    // }
+    // function btnOnHoverOut(){
+    //     console.log("滑動往上! OUT ");
+    // }
+
 </script>
 </body>
 </html>
