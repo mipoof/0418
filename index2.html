@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--css-->
+    <style>
+        .myli {
+            color: blueviolet;
+        }
+
+        .myli2 {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+<a href="about.html">About</a>
+
+<ul id="t1">
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+</ul>
+<ul id="t2">
+    <li class="myli">A</li>
+    <li class="myli">B</li>
+    <li class="myli">C</li>
+</ul>
+
+
+<!--js-->
+<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+    $(function () {
+        console.log("hi~~~ ");
+        //MyBtnClick();
+        $("#btnC").bind("click" ,MyBtnClick");
+    });
+        // #t1 > li:nth-child(1)
+        // #t1 > li
+        //$("#t1 > li").addClass("myli");
+
+        // #t2 > li:nth-child(1)
+        // #t2 > li
+        //$("#t2 > li").removeClass("myli").addClass("myli2");
+
+
+
+    function MyBtnClick(){
+        console.log("my btn click !!!");
+    }
+</script>
+</body>
+</html>

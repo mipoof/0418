@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--css-->
+  <style>
+    .myli{
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+<a href="about.html">About</a>
+
+<ul id="t1">
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+</ul>
+<ul>
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+</ul>
+
+<!--js-->
+<script src="https://code.jquery.com/jquery-3.6.4.js "></script>
+<script type="text/javascript">
+    $(function(){
+        console.log("AAA");
+        $("#t1 > li").addClass("myli")
+    });
+
+</script>
+</body>
+</html>
